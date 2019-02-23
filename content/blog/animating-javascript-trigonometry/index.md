@@ -1,6 +1,6 @@
 ---
 title: Interactive Javascript Animations with Trigonometry
-date: '2019-01-23'
+date: '2019-02-23'
 ---
 
 I wasn't the greatest fan of maths back in school. Beyond basic arithmetic I couldn't see when I'd ever need to use the subjects they taught in real life.

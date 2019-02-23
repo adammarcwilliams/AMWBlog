@@ -4,7 +4,7 @@ import Image from 'gatsby-image'
 
 import { rhythm } from '../utils/typography'
 
-function Bio() {
+function Bio () {
   return (
     <StaticQuery
       query={bioQuery}
@@ -14,7 +14,7 @@ function Bio() {
           <div
             style={{
               display: `flex`,
-              marginBottom: rhythm(2.5),
+              marginBottom: rhythm(2.5)
             }}
           >
             <Image
@@ -24,18 +24,21 @@ function Bio() {
                 marginRight: rhythm(1 / 2),
                 marginBottom: 0,
                 minWidth: 50,
-                borderRadius: `100%`,
+                borderRadius: `100%`
               }}
               imgStyle={{
-                borderRadius: `50%`,
+                borderRadius: `50%`
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+              Written by <strong>{author}</strong>, a Creative Technologist at
+              Rhythm Digital and co-organiser of VR Manchester & Free Code Camp.
+              <br />
+              <a
+                style={{ color: '#76c3da' }}
+                href={`https://twitter.com/${social.twitter}`}
+              >
+                Follow me on Twitter
               </a>
             </p>
           </div>

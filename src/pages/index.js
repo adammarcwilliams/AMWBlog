@@ -7,7 +7,7 @@ import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
-  render() {
+  render () {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
@@ -15,8 +15,18 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          title='All posts'
+          keywords={[
+            `creative coding`,
+            `webgl`,
+            `unity`,
+            `xr`,
+            `vr`,
+            `ar`,
+            `javascript`,
+            `react`,
+            `manchester`
+          ]}
         />
         <Bio />
         {posts.map(({ node }) => {
@@ -25,10 +35,13 @@ class BlogIndex extends React.Component {
             <div key={node.fields.slug}>
               <h3
                 style={{
-                  marginBottom: rhythm(1 / 4),
+                  marginBottom: rhythm(1 / 4)
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <Link
+                  style={{ boxShadow: `none`, color: `#76c3da` }}
+                  to={node.fields.slug}
+                >
                   {title}
                 </Link>
               </h3>
