@@ -11,7 +11,7 @@ As I started to take on creative coding projects and XR development though, I so
 
 The more I discover, the more fun I tend to have when coding interactive experiences and so I've decided to start sharing what I learn to reinforce it and act as a reference for future me who's bound to forget stuff.
 
-In this post I'm sharing some simple trigonometry techniques that have proved useful on several occasions. To do so we will create a little demo of an eye-ball that looks at your cursor as you move it around the screen.
+In this post I'm sharing some simple trigonometry techniques that have proved useful on several occasions. To do so we'll create a little demo of an eye-ball that looks at your cursor as you move it around the screen.
 
 
 ## Canvas Set-up
@@ -77,7 +77,7 @@ Given the angle that's passed in it will give you the position needed to plot th
 
 
 
-A couple of things to note is that the angle you pass is in radians, not degrees. This is easy to convert back and forth:
+A couple of things to note is that the angle you pass in is in radians, not degrees. This is easy to convert back and forth:
 
 ```javascript
 radians = degrees * Math.PI / 180
@@ -105,7 +105,7 @@ dy = my - eye.y;
 
 By plotting a point from the eyes center by `dx` along the x axis (adjacent side) and then `dy` along the y axis (opposite side) then joining that back up to the center (hypotenuse side), we have our right angle triangle.
 
-*NEED A DIAGRAM HERE!!*
+![Right angle from eye diagram](./Eye-Right-Angle-Diagram.png)
 
 We can see now the angle we need is that of the slope of the hypotenuse.
 
@@ -116,12 +116,12 @@ But actually, Javascript's Math object has a function that will take care of bot
 theta = Math.atan2(dy, dx);
 ```
 
-And there we go, now we know the angle and can pass it into our draw loop to have they eye follow our cursor.
+And there we go, now we know the angle and can pass it into our draw loop to have the eye follow our cursor.
 
 It can be a little tricky to visualise what's going on here in your head, so I've created a version of our demo with a debug layer to help.
 
 
-https://codepen.io/adammarcwilliams/pen/yZLQOe
+https://codepen.io/adammarcwilliams/pen/mvNWjo
 
 ## Bonus Trigonometry
 
