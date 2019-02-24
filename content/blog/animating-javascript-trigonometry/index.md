@@ -11,7 +11,9 @@ As I started to take on creative coding projects and XR development though, I so
 
 The more I discover, the more fun I tend to have when coding interactive experiences and so I've decided to start sharing what I learn to reinforce it and act as a reference for future me who's bound to forget stuff.
 
-In this post I'm sharing some simple trigonometry techniques that have proved useful on several occasions. To do so we'll create a little demo of an eye-ball that looks at your cursor as you move it around the screen.
+In this post I'm sharing some trigonometry techniques that have proved useful on several occasions. To do so we'll create a little demo of an eye-ball that looks at your cursor as you move it around the screen.
+
+If you find yourself struggling with any of these techniques, I've included some additional resources at the end of the article to help.
 
 
 ## Canvas Set-up
@@ -145,4 +147,16 @@ Luckily for us though, Javascript's Math object has another handy function calle
 const radius = Math.hypot(dx, dy)
 ```
 
+## Resources
 
+[Mathematics of Animation](https://youtu.be/KbxJWx-ue0U) -
+
+This talk by Varun Vachhar is what inspired be to write this article and gave me the idea to use an eye-ball to demonstrate trigonometry in animation.
+
+[Coding Math](https://www.youtube.com/watch?v=zm9bqSSiIdo&list=PL7wAPgl1JVvUEb0dIygHzO4698tmcwLk9) -
+
+Fantastic YouTube series on math for creative coding that begins with a 4 part segment on trigonometry.
+
+[Khan Academy - Trigonometry](https://www.khanacademy.org/math/trigonometry) -
+
+An online classroom that offers lots of free courses including some incredible primers on math.
