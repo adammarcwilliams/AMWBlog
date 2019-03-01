@@ -1,5 +1,5 @@
 ---
-title: Making and Using a Bitmap Font in PIXI.js
+title: Making and Using a Bitmap Font in PIXI.js v5
 date: '2019-03-01'
 ---
 
